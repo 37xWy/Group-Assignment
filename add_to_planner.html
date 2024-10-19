@@ -60,7 +60,7 @@
         // Ensure both startDate and endDate are available
         if (!startDate || !endDate) {
             alert("Please select a date range in the planner before adding an attraction.");
-            window.location.href = "planner.php"; // Redirect if no date range set
+            window.location.href = "planner.html"; // Redirect if no date range set
             return;
         }
 
@@ -69,7 +69,7 @@
             document.getElementById('selectedPlace').innerText = place; // Display selected place
         } else {
             alert("Please search and select a place before adding to the planner.");
-            window.location.href = "search.php"; // Redirect if no place selected
+            window.location.href = "search.html"; // Redirect if no place selected
             return;
         }
 
@@ -134,7 +134,7 @@
             localStorage.setItem('activityEndTime', endTime);
 
             // Redirect back to the planner page with the details
-            window.location.href = 'planner.php';
+            window.location.href = 'planner.html';
         });
     };
 </script>
