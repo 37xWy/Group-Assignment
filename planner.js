@@ -42,7 +42,7 @@ window.onload = function() {
     // Load saved attractions from localStorage
     loadSavedAttractions();
     
-    // After generating days, check for any attraction added from add_to_planner.php
+    // After generating days, check for any attraction added from add_to_planner.html
     const chosenAttraction = localStorage.getItem('chosenAttraction');
     const userSelectedDate = localStorage.getItem('userSelectedDate');
     const activityStartTime = localStorage.getItem('activityStartTime');
@@ -160,14 +160,14 @@ function generateDays(startDate, endDate) {
     }
 }
 
-// Redirect to search.php to search for a new attraction and store the selected date
+// Redirect to search.html to search for a new attraction and store the selected date
 function addCard(day) {
     isAddingCard = true; // Set the flag to true
     // Save the selected day in localStorage, ensuring it's in YYYY-MM-DD format
     localStorage.setItem('selectedDay', day);
 
-    // Redirect to search.php
-    window.location.href = 'search.php';
+    // Redirect to search.html
+    window.location.href = 'search.html';
 }
 
 // Function to add an attraction card to the specified day
