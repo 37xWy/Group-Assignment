@@ -1,0 +1,400 @@
+#header {
+    height: 100px;
+    background-color: #fcd1d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding for a cleaner look */
+}
+
+#search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#searchbar {
+    height: 50px;
+    width: 400px;
+    border-radius: 25px;
+    border: 2px solid #c3829e;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters select {
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #c3829e;
+    padding: 0 10px;
+}
+
+/* Style for the navigation buttons */
+.button, .planner-button {
+    background-color: #c3829e;
+    border: none;
+    color: #ffe7de;
+    padding: 10px 30px; /* Adjust padding to fit within the bar */
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;  /* Adjusted for consistency */
+    border-radius: 40px;
+    cursor: pointer;
+    flex-grow: 1;  /* Buttons will resize to fill the available space */
+    max-width: 180px; /* Ensure buttons don't grow too large */
+    text-decoration: none; /* Make buttons look like actual buttons instead of links */
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #ae748d; /* Darker shade on hover */
+}
+
+.planner-button:hover {
+    background-color: #ae748d; /* Darker shade on hover */
+}
+
+#banner {
+    height: 160px;
+    width: auto;
+    margin-bottom: 20px;
+    background-color: #562135;
+}
+
+#places {
+    background-color: #fcd1d7;
+    padding: 10px 150px; 
+    height: 200px;
+    width: 13%;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+    color: #c3829e;
+}
+
+#desc {
+    align-items: right;
+    box-sizing: auto;
+    height: 200px;
+    width: 450px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    overflow: auto;
+    margin: 5px;
+    padding-right: 42px;
+    display: inline-block;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.result-item {
+    background-color: #fcd1d7;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #aaa;
+    color: #562135;
+    text-align: center;
+    cursor: pointer;
+}
+
+.result-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 16px;
+}
+
+#trending {
+    margin: 20px 0;
+}
+
+.trending-item {
+    background-color: #c3829e;
+    padding: 10px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #aaa;
+    color: #ffe7de;
+    text-align: center;
+    cursor: pointer;
+}
+
+.trending-item h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.trending-item p {
+    font-size: 16px;
+}
+
+
+/* Planner styles */
+
+#plannerContainer {
+    display: flex; /* Use flexbox for the container */
+    justify-content: flex-start; /* Align child elements to the start */
+    gap: 20px; /* Space between the date sections */
+    margin: 20px; /* Center the container with auto margins */
+    padding: 0 20px; /* Add padding to prevent touching the sides */
+    max-width: 800px; /* Limit the width to prevent too much stretching */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make the label bold */
+    color: #562135; /* Darker color for better contrast */
+}
+
+.plannerSection {
+    display: flex; /* Flexbox for each date section */
+    align-items: center; /* Center align items vertically */
+}
+
+.plannerSection label {
+    margin-right: 10px; /* Space between label and input */
+}
+
+.plannerSection input {
+    width: 120px; /* Width for the input fields */
+    padding: 5px; /* Padding for comfort */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #c3829e; /* Border color to match the theme */
+    background-color: #ffe7de; /* Background color for input */
+    font-size: 16px; /* Font size for the input */
+    color: #562135; /* Input text color */
+}
+
+/* Optional: Add styles for input focus */
+.plannerSection input:focus {
+    border-color: #ff8e8e; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(255, 142, 142, 0.5); /* Subtle glow effect */
+}
+
+#planner-container {
+    display: flex;
+    margin: 20px;
+}
+
+.days-slider {
+    overflow-y: auto; /* Allow vertical scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    width: 60%; /* Adjust width to allow space for preview */
+    max-height: 620px; /* Limit height for scrolling */
+    padding: 10px;
+    position: relative; /* For the scrollbar */
+}
+
+.planner-day {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #fcd1d7;
+    padding: 20px 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.attraction-card {
+    background-color: #c3829e;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #ffe7de;
+}
+
+.add-card-btn {
+    background-color: #ff8e8e;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: calc(20%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#attractionDetailsPanel {
+    width: 29%;
+    max-width: 29%;
+    background-color: #fcd1d7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    position: sticky;
+    top: 20px;
+    height: auto;
+}
+
+#attractionImage {
+    max-width: 100%; /* Ensures the image never exceeds the panel's width */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust spacing between rows */
+}
+
+.date-container label {
+    margin-right: 10px; /* Space between label and input */
+}
+
+.date-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.days-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.days-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Container for the navigation buttons */
+#nav-container {
+    display: flex;
+    justify-content: center;  /* Center the buttons */
+    align-items: center;
+    gap: 10px; /* Spacing between buttons */
+    padding: 20px 0;
+}
+
+/* Styles for the Add to Planner page */
+#attractionDetails {
+    background-color: #fcd1d7; /* Match the background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner padding */
+    margin: 20px auto; /* Center alignment */
+    max-width: 500px; /* Limit max width for the form */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label styles */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #562135; /* Dark color for contrast */
+}
+
+/* Input styles */
+input[type="date"],
+input[type="time"] {
+    width: 96%; /* Full width inputs */
+    padding: 10px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #c3829e; /* Border color */
+    background-color: #ffe7de; /* Input background color */
+    font-size: 16px; /* Font size for inputs */
+    color: #562135; /* Input text color */
+}
+
+/* Input focus styles */
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #ff8e8e; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(255, 142, 142, 0.5); /* Glow effect */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label styles */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #562135; /* Dark color for contrast */
+}
+
+/* Adjust styling for smaller screens for responsive design */
+@media screen and (max-width: 768px) {
+    #header {
+        height: auto; /* Adjust height based on content */
+        padding: 10px; /* Add some padding for a cleaner look */
+    }
+    #header h2 {
+        font-size: 20px; /* Reduce header text size */
+    }
+    #header p {
+        font-size: 14px; /* Reduce login/register link size */
+    }
+
+    #searchbar {
+        width: 100%; /* Make the search bar responsive */
+        margin-right: 0; /* Remove margin for smaller screens */
+    }
+
+    .button {
+        font-size: 16px; /* Slightly smaller text on smaller screens */
+        padding: 8px 20px;
+    }
+
+    #places {
+        width: 100%; /* Stack places section vertically */
+        height: auto; /* Adjust height */
+    }
+    #desc {
+        width: 100%; /* Stack description section */
+        height: auto; /* Adjust height */
+    }
+
+    #planner-container {
+        flex-direction: column; /* Stack the planner and preview */
+    }
+    .days-slider {
+        width: 100%; /* Take full width on smaller screens */
+    }
+    #attractionDetailsPanel {
+        width: 100%; /* Stack preview below planner days */
+        margin-left: 0;
+    }
+
+    .result-item {
+        width: 100%; /* Make result items take full width */
+    }
+
+    body {
+        padding: 10px;
+    }
+    h2, h4 {
+        font-size: 18px; /* Slightly smaller header font sizes */
+    }
+    p, .button {
+        font-size: 14px; /* Reduce paragraph and button font size */
+    }
+}
